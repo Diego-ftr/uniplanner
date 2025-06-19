@@ -3,6 +3,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { Calendar, Brain, Heart, ArrowDown, Star, Sparkles } from 'lucide-react'
 import { useRef, useState, useEffect } from 'react'
+import Link from 'next/link'
 
 export default function Hero() {
   const ref = useRef(null)
@@ -175,13 +176,15 @@ export default function Hero() {
             <Sparkles className="h-5 w-5" />
             <span>Probar Ahora</span>
           </motion.button>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 bg-white text-gray-700 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200"
-          >
-            Ver Demo
-          </motion.button>
+          <Link href="/demo">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-8 py-4 bg-white text-gray-700 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200"
+            >
+              Ver Demo
+            </motion.button>
+          </Link>
         </motion.div>
 
         {/* Testimonial Preview */}

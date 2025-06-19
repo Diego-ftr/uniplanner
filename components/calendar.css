@@ -1,0 +1,128 @@
+/* FullCalendar base styles */
+.fc {
+  font-family: inherit;
+}
+
+.fc-toolbar {
+  margin-bottom: 1.5rem;
+}
+
+.fc-toolbar-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.fc-button {
+  background: #f3f4f6 !important;
+  border: 1px solid #e5e7eb !important;
+  color: #374151 !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s;
+}
+
+.fc-button:hover {
+  background: #e5e7eb !important;
+}
+
+.fc-button-active,
+.fc-button:active {
+  background: #ec4899 !important;
+  border-color: #ec4899 !important;
+  color: white !important;
+}
+
+.fc-button:focus {
+  box-shadow: none !important;
+}
+
+.fc-button-primary:not(:disabled).fc-button-active,
+.fc-button-primary:not(:disabled):active {
+  background-color: #ec4899 !important;
+  border-color: #ec4899 !important;
+}
+
+/* Calendar grid */
+.fc-theme-standard td,
+.fc-theme-standard th {
+  border: 1px solid #e5e7eb;
+}
+
+.fc-theme-standard .fc-scrollgrid {
+  border: 1px solid #e5e7eb;
+}
+
+/* Day cells */
+.fc-daygrid-day {
+  transition: background-color 0.2s;
+}
+
+.fc-daygrid-day:hover {
+  background-color: #f9fafb;
+  cursor: pointer;
+}
+
+.fc-day-today {
+  background: rgba(236, 72, 153, 0.1) !important;
+}
+
+.fc-daygrid-day-number {
+  color: #374151;
+  font-weight: 500;
+}
+
+/* Events */
+.fc-event {
+  border: none !important;
+  padding: 2px 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 0.375rem;
+  transition: opacity 0.2s;
+}
+
+.fc-event:hover {
+  opacity: 0.8;
+}
+
+.fc-daygrid-event {
+  white-space: normal;
+}
+
+.fc-event-title {
+  font-weight: 500;
+}
+
+.fc-event-time {
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+/* Week view */
+.fc-timegrid-slot {
+  height: 3rem;
+}
+
+.fc-timegrid-slot-label {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .fc-toolbar {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .fc-toolbar-title {
+    font-size: 1.25rem;
+  }
+  
+  .fc-button {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+  }
+}

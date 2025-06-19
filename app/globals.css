@@ -24,3 +24,48 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* FullCalendar Custom Styling */
+.fc {
+  font-family: inherit;
+}
+
+.fc-toolbar-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.fc-button {
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  color: #374151;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s;
+}
+
+.fc-button:hover {
+  background: #e5e7eb;
+}
+
+.fc-button-active {
+  background: #ec4899 !important;
+  border-color: #ec4899 !important;
+  color: white !important;
+}
+
+.fc-event {
+  border: none;
+  padding: 2px 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.fc-daygrid-event {
+  white-space: normal;
+}
+
+.fc-day-today {
+  background: rgba(236, 72, 153, 0.1) !important;
+}
